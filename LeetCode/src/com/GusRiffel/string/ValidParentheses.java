@@ -1,35 +1,35 @@
 package com.GusRiffel.string;
 
+import java.util.Stack;
+
 public class ValidParentheses {
     public static void main(String[] args) {
-        System.out.println(isValid("()[]{}"));
+        System.out.println(isValid("{[]}"));
 
     }
+
     public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
-            switch (s.charAt(i)) {
-                case '(':
-                    if (s.charAt(i + 1) != ')') {
-                        return false;
-                    }
-                    break;
-
-                case '{':
-                    if (s.charAt(i + 1) != '}') {
-                        return false;
-                    }
-                    break;
-
-                case '[':
-                    if (s.charAt(i + 1) != ']') {
-                        return false;
-                    }
-                    break;
-
-                default:
-                    break;
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                stack.push(s.charAt(i));
+            }
+            if (s.charAt(i) == ')' && !stack.empty() && stack.peek() == '('
+                    ||
+                    s.charAt(i) == ']' && !stack.empty() &&  stack.peek() == '['
+                    ||
+                    s.charAt(i) == '}' && !stack.empty() && stack.peek() == '{')
+            {
+                stack.pop();
+            } else if (s.charAt(i) == ')'
+                    ||
+                    s.charAt(i) == ']'
+                    ||
+                    s.charAt(i) == '}')
+            {
+                stack.push(s.charAt(i));
             }
         }
-        return true;
+        return stack.empty();
     }
 }
