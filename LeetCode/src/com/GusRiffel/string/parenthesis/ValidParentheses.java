@@ -1,4 +1,4 @@
-package com.GusRiffel.string;
+package com.GusRiffel.string.parenthesis;
 
 import java.util.Stack;
 

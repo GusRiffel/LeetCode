@@ -1,4 +1,4 @@
-package com.GusRiffel.string;
+package com.GusRiffel.string.parenthesis;
 
 //Given a balanced parentheses string s, return the score of the string.
 //

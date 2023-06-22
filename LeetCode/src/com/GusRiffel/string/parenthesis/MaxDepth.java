@@ -1,4 +1,4 @@
-package com.GusRiffel.string;
+package com.GusRiffel.string.parenthesis;
 
 //A string is a valid parentheses string (denoted VPS) if it meets one of the following:
 //
