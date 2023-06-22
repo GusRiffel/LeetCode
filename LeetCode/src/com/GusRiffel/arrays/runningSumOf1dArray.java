@@ -1,8 +1,5 @@
 package com.GusRiffel.arrays;
 
-import java.sql.Array;
-import java.util.ArrayList;
-import java.util.List;
 
 public class runningSumOf1dArray {
     public static void main(String[] args) {
