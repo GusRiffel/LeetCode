@@ -32,10 +32,35 @@ package com.GusRiffel.string.types;
 //        num consists only of digits.
 public class AdditiveNumber {
     public static void main(String[] args) {
-        System.out.println(isAdditiveNumber("112358"));
+        System.out.println(isAdditiveNumber("8917"));
     }
 
     public static boolean isAdditiveNumber(String num) {
-        return true;
+        if (num == null || num.length() < 3) {
+            return false;
+        }
+
+        return dfs(num, 0, 0, 0, 0);
+    }
+    private static boolean dfs(String num, int index, long prevSum, long prevNum, int count) {
+        if (index == num.length()) {
+            return count > 2;
+        }
+
+        long currentNum = 0;
+        for (int i = index; i < num.length(); i++) {
+            currentNum = currentNum * 10 + (num.charAt(i) - '0');
+
+            if (i > index && num.charAt(index) == '0') {
+                break;
+            }
+
+            if (count < 2 || currentNum == prevSum) {
+                if (dfs(num, i + 1, prevNum + currentNum, currentNum, count + 1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
