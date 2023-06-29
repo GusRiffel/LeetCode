@@ -13,3 +13,5 @@ m
 0src/com/GusRiffel/string/types/ValidAnagram.java,5/b/5b1ef2d0dd32f40c9d6a3cb781e4757a130ed9b6
 e
 5src/com/GusRiffel/string/types/IsomorphicStrings.java,4/2/4243702ce3c120c9fb149403cafd472a19df9ddf
+b
+2src/com/GusRiffel/string/types/AdditiveNumber.java,e/0/e0883079ac72f1f069886da448adb23ff50a7a73
