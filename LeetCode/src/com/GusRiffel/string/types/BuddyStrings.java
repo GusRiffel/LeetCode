@@ -30,10 +30,36 @@ package com.GusRiffel.string.types;
 //        s and goal consist of lowercase letters.
 public class BuddyStrings {
     public static void main(String[] args) {
-        System.out.println(buddyStrings("ab", "ba"));
+        System.out.println(buddyStrings("ababec", "ababce"));
     }
 
     public static boolean buddyStrings(String s, String goal) {
-        return true;
+
+        if (s.length() != goal.length()) {
+            return false;
+        }
+
+        int diff = 0;
+        boolean f = false;
+        int[] sCharsArray = new int[26];
+        int[] goalCharsArray = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            int sCharValue = s.charAt(i) - 'a';
+            int goalCharValue = goal.charAt(i) - 'a';
+            sCharsArray[sCharValue]++;
+            goalCharsArray[goalCharValue]++;
+            if (s.charAt(i) != goal.charAt(i)) {
+                diff++;
+            }
+        }
+        for (int i = 0; i < 26; i++) {
+            if (sCharsArray[i] != goalCharsArray[i]) {
+                return false;
+            }
+            if (sCharsArray[i] > 1) {
+                f = true;
+            }
+        }
+        return diff == 2 || (diff == 0 && f);
     }
 }
