@@ -15,3 +15,5 @@ e
 5src/com/GusRiffel/string/types/IsomorphicStrings.java,4/2/4243702ce3c120c9fb149403cafd472a19df9ddf
 b
 2src/com/GusRiffel/string/types/AdditiveNumber.java,e/0/e0883079ac72f1f069886da448adb23ff50a7a73
+X
+(src/com/GusRiffel/recursion/Collatz.java,2/f/2f85846d3dbe43859bf471ce59d232935a52f141
