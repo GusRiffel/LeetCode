@@ -36,12 +36,37 @@ package com.GusRiffel.string.types;
 //        1 <= s.length <= 500
 //        s consists of only lowercase English letters.
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 public class IncreasingDecreasingString {
     public static void main(String[] args) {
         System.out.println(sortString("aaaabbbbcccc"));
     }
-
     public static String sortString(String s) {
-        return "";
+        int[] chars = new int[26];
+        StringBuilder string = new StringBuilder();
+
+        for (int i = 0; i < s.length(); i++) {
+            chars[s.charAt(i) - 'a']++;
+        }
+
+        while (string.length() < s.length()) {
+            for (int i = 0; i < chars.length; i++) {
+                if (chars[i] != 0) {
+                    string.append((char) (i + 'a'));
+                    chars[i]--;
+                }
+            }
+            for (int i = chars.length - 1; i >= 0; i--) {
+                if (chars[i] != 0) {
+                    string.append((char) (i + 'a'));
+                    chars[i]--;
+                }
+            }
+        }
+        return string.toString();
     }
 }
