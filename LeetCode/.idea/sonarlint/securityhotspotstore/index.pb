@@ -13,3 +13,11 @@ X
 (src/com/GusRiffel/recursion/Collatz.java,2/f/2f85846d3dbe43859bf471ce59d232935a52f141
 `
 0src/com/GusRiffel/string/types/BuddyStrings.java,9/6/96afa9f5dfea8b10a25305846d901588a2c77eb7
+e
+5src/com/GusRiffel/string/types/IsomorphicStrings.java,4/2/4243702ce3c120c9fb149403cafd472a19df9ddf
+`
+0src/com/GusRiffel/string/types/ValidAnagram.java,5/b/5b1ef2d0dd32f40c9d6a3cb781e4757a130ed9b6
+n
+>src/com/GusRiffel/string/types/IncreasingDecreasingString.java,8/8/88af3fa4aa29815765d5f1c0d3bfb9ac891f8917
+b
+2src/com/GusRiffel/string/types/AdditiveNumber.java,e/0/e0883079ac72f1f069886da448adb23ff50a7a73
