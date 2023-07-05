@@ -36,11 +36,6 @@ package com.GusRiffel.string.types;
 //        1 <= s.length <= 500
 //        s consists of only lowercase English letters.
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-
 public class IncreasingDecreasingString {
     public static void main(String[] args) {
         System.out.println(sortString("aaaabbbbcccc"));

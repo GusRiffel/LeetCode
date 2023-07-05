@@ -1,0 +1,13 @@
+
+
+java:S1319,"_The type of "h1" should be an interface such as "Map" rather than the implementation "HashMap".(âêæ¢üÿÿÿÿ8Í±ë‰’1
+{
+java:S1319>"_The type of "h1" should be an interface such as "Map" rather than the implementation "HashMap".(•©„$8Êï‰’1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ìĞıüÿÿÿÿ8Ëœ·‰’1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Àù¶Í8Ñ·‰’1
+L
+java:S1197("*Move the array designators [] to the type.(š¼§‡ÿÿÿÿÿ8¢ëè‰’1
+L
+java:S1197,"*Move the array designators [] to the type.(âêæ¢üÿÿÿÿ8¤ëè‰’1
+^
+java:S1126?"AReplace this if-then-else statement by a single return statement.(€¿Ÿò8©ëè‰’1
