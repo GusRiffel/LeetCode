@@ -29,12 +29,50 @@ package com.GusRiffel.string.types;
 //        1 <= n <= 10^5
 //        All strings consist of lowercase English letters.
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class CheckIfCanBreak {
     public static void main(String[] args) {
-        System.out.println(checkIfCanBreak("abc", "xya"));
+        System.out.println(checkIfCanBreak("szy", "cid"));
     }
 
     public static boolean checkIfCanBreak(String s1, String s2) {
-        return true;
+        List<Integer> s1List = new ArrayList<>();
+        List<Integer> s2List = new ArrayList<>();
+        boolean result = true;
+        for (int i = 0; i < s1.length(); i++) {
+            s1List.add(s1.charAt(i) - 'a');
+        }
+
+        for (int i = 0; i < s2.length(); i++) {
+            s2List.add(s2.charAt(i) - 'a');
+        }
+
+        Collections.sort(s1List);
+        Collections.sort(s2List);
+
+        for (int i = 0; i < s2.length(); i++) {
+            if (s1List.get(i) < s2List.get(i)) {
+                result = false;
+                break;
+            }
+            result = true;
+        }
+
+        if (result) {
+            return result;
+        }
+
+        for (int i = 0; i < s1.length(); i++) {
+           if (s2List.get(i) < s1List.get(i)) {
+               result = false;
+               break;
+           }
+           result = true;
+        }
+
+        return result;
     }
 }
