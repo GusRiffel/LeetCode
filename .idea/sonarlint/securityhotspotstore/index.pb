@@ -7,10 +7,6 @@ i
 9LeetCode/src/com/GusRiffel/string/types/ValidAnagram.java,7/c/7c4f728d27f7989424f5961e62668216694d2f49
 n
 >LeetCode/src/com/GusRiffel/string/types/IsomorphicStrings.java,b/e/be5ab9f0197765d604191cf28ee5475229165db9
-w
-GLeetCode/src/com/GusRiffel/string/types/IncreasingDecreasingString.java,6/d/6de27503cb0a247225d1c70b3a6e54eb5237a1af
-f
-6LeetCode/src/com/GusRiffel/string/types/WordBreak.java,0/4/04c22042cb2a8c6517fd3b52a6cde06e1b28d411
 k
 ;LeetCode/src/com/GusRiffel/string/types/AdditiveNumber.java,e/6/e641416e1f84389e085bb190a07598864d2c963a
 i

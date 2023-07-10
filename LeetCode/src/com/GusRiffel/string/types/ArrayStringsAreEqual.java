@@ -33,7 +33,9 @@ package com.GusRiffel.string.types;
 
 public class ArrayStringsAreEqual {
     public static void main(String[] args) {
-        System.out.println(arrayStringAreEqual(["ab","c"], ["a","bc"]));
+        String[] word1 = {"ab", "c"};
+        String[] word2 = {"a", "bc"};
+        System.out.println(arrayStringAreEqual(word1, word2));
     }
 
     public static boolean arrayStringAreEqual(String[] word1, String[] word2) {

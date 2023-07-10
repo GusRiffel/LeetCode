@@ -39,12 +39,42 @@ package com.GusRiffel.string.types;
 //        1 <= word1.length, word2.length <= 105
 //        word1 and word2 contain only lowercase English letters.
 
+import java.util.Arrays;
+
 public class CloseStrings {
     public static void main(String[] args) {
         System.out.println(closeStrings("abc", "bca"));
     }
 
     public static boolean closeStrings(String word1, String word2) {
-        return  true;
+        int length1 = 0;
+        int length2 = 0;
+
+        if ((length1 = word1.length()) != (length2 = word2.length())) {
+            return false;
+        }
+
+        byte[] word1Bytes = word1.getBytes();
+        byte[] word2Bytes = word2.getBytes();
+        int[] word1IntArray = new int[26];
+        int[] word2IntArray = new int[26];
+        method(word1Bytes, word1IntArray, length1);
+        method(word2Bytes, word2IntArray, length2);
+        for (int i = 0; i < 26; i++) {
+            if (word1IntArray[i] > 0 ^ word2IntArray[i] > 0) {
+                return false;
+            }
+        }
+
+        Arrays.sort(word1IntArray);
+        Arrays.sort(word2IntArray);
+
+        return Arrays.equals(word1IntArray, word2IntArray);
+    }
+
+    public static void method(byte[] b, int[] c, int l) {
+        while (l-- > 0) {
+            c[b[l] - 97]++;
+        }
     }
 }
