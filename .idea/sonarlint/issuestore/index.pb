@@ -11,3 +11,9 @@ k
 ;LeetCode/src/com/GusRiffel/string/types/AdditiveNumber.java,e/6/e641416e1f84389e085bb190a07598864d2c963a
 i
 9LeetCode/src/com/GusRiffel/string/types/BuddyStrings.java,f/2/f255d2b1ecf1d14f9c73b34095ea723e3da31476
+w
+GLeetCode/src/com/GusRiffel/string/types/IncreasingDecreasingString.java,6/d/6de27503cb0a247225d1c70b3a6e54eb5237a1af
+f
+6LeetCode/src/com/GusRiffel/string/types/WordBreak.java,0/4/04c22042cb2a8c6517fd3b52a6cde06e1b28d411
+l
+<LeetCode/src/com/GusRiffel/string/types/CheckIfCanBreak.java,6/4/648dc9a7a7ad7df1f3e510bb1d6ec35ba231da05
